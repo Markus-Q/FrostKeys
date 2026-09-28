@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -31,5 +30,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: FrostKeys-APK
-        path: app/build/outputs/apk/debug
-        /*.apk
+        path: "**/*
+        .apk"
